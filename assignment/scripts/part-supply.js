@@ -81,18 +81,22 @@ while (i < supplyChanges.length) {
     i++;
   }
 }
-// the above took me embarrassingly long to figure out, messed around in jsbin and realized my variables needed to be declared in the block scope? among other things. I was frustrated and solving it is a really cool feeling even if it was simple <3
+
+// the above took me embarrassingly long to figure out, messed around in jsbin and realized my x needed to be declared in the block scope?
 
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
-console.log('9. Total supplies available is:');
 
 let partsTotal = 0;
 for (let i = 0; i < supplyChanges.length; i++) {
   partsTotal += supplyChanges[i];
 }
 
-console.log('9. Total supplies available is:' + partsTotal);
+console.log('9. Total supplies available is: ' + partsTotal);
 
-// curious about solving this one with the reducer method but i didn't quite understand, i'll try again tomorrow!
+// using reduce method
+
+const sumOfParts = supplyChanges.reduce((total, amount) => total + amount);
+
+console.log('9. Total supplies available is ' + sumOfParts);
