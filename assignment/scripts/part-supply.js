@@ -79,10 +79,20 @@ while (i < supplyChanges.length) {
   } else {
     console.log('Part count' + x);
     i++;
-  } 
+  }
 }
+// the above took me embarrassingly long to figure out, messed around in jsbin and realized my variables needed to be declared in the block scope? among other things. I was frustrated and solving it is a really cool feeling even if it was simple <3
 
 
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
+
+let partsTotal = 0;
+for (let i = 0; i < supplyChanges.length; i++) {
+  partsTotal += supplyChanges[i];
+}
+
+console.log('9. Total supplies available is:' + partsTotal);
+
+// curious about solving this one with the reducer method but i didn't quite understand, i'll try again tomorrow!
