@@ -84,7 +84,6 @@ while (i < supplyChanges.length) {
 
 // the above took me embarrassingly long to figure out, messed around in jsbin and realized my x needed to be declared in the block scope?
 
-
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 
